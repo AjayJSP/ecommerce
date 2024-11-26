@@ -1,11 +1,10 @@
 // pages/_app.js
-import "../styles/globals.css"; // Import global CSS
+import "../styles/globals.css";
 import Layout from "../components/Layout";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CartProvider } from "@/context/CartContext";
-// import { CartProvider } from "../context/CartContext"; // Import your CartContext
-//
-const theme = createTheme(); // Create a theme
+
+const theme = createTheme();
 
 export default function MyApp({ Component, pageProps }) {
   return (
