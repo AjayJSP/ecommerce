@@ -7,7 +7,6 @@ import { useCart } from "@/context/CartContext";
 
 const socket = io("http://localhost:5000");
 
-// Define styles using makeStyles
 const useStyles = makeStyles((theme) => ({
   card: {
     transition: "transform 0.2s, box-shadow 0.2s",

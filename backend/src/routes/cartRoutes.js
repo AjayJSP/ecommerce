@@ -4,7 +4,7 @@ const router = express.Router();
 
 const createCartRouter = (io) => {
   router.post("/checkout", async (req, res) => {
-    const cart = req.body; // [{ _id, quantity }]
+    const cart = req.body;
     try {
       const updatedProducts = [];
 

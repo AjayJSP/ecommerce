@@ -3,7 +3,7 @@ import { Button, Typography, Card, CardContent, Grid, TextField, Snackbar } from
 import { styled } from "@mui/material/styles";
 import { useCart } from "../context/CartContext";
 import io from "socket.io-client";
-import api from "@/utils/api"; // Adjust the path as needed
+import api from "@/utils/api";
 
 const socket = io("http://localhost:5000");
 

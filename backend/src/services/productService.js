@@ -25,7 +25,7 @@ const validateAndUpdateStock = async (cart) => {
     throw { error: true, items: errors };
   }
   // Emit stock update event to all clients
-  const updatedProducts = await Product.find(); // Fetch updated stock
+  const updatedProducts = await Product.find();
   io.emit("stock-updated", updatedProducts);
 };
 
